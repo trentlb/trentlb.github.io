@@ -46,8 +46,10 @@
 <p>The solution I liked the most (there are others) was to always run emacsclient when opening files instead of emacs.</p>
 <p>When emacsclient runs, it will start the emacs server.  Thereafter, when you run emacsclient, it will connect to the existing server.</p>
 <p>To do this, add the following to your ~/.profile or ~/.bashrc file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias e<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c --socket-name=/tmp/emacs1000/server&#34;</span>
-</code></pre></div><p><strong>alias, etc.</strong> This maps e to emacs client, so I can simply type &ldquo;e filename.txt&rdquo; instead of &ldquo;emacs filename.txt&rdquo; to open a file in emacs.  You can make this &ldquo;emacs&rdquo; instead, if you&rsquo;re less lazy than me.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export ALTERNATE_EDITOR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+alias e<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c --socket-name=/run/user/1000/emacs/server&#34;</span>
+</code></pre></div><p><strong>ALTERNATE_EDITOR</strong>: When you run emacsclient, when this environment variable is empty, emacs will start the daemon and connect to it.
+<strong>alias, etc.</strong>: This maps e to emacs client, so I can simply type &ldquo;e filename.txt&rdquo; instead of &ldquo;emacs filename.txt&rdquo; to open a file in emacs.  You can make this &ldquo;emacs&rdquo; instead, if you&rsquo;re less lazy than me.</p>
 <p>I prefer emacs in visual mode.  If you don&rsquo;t, change the &ldquo;-c&rdquo; to &ldquo;-t&rdquo; to open in terminal mode.</p>
 <p><strong>Now reload your .profile or .bashrc somehow.</strong></p>
 <p>I just do one of these:</p>
