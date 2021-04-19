@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://w0wie.org/post/doom-emacs-server-mode-daemon/</loc>
+    <lastmod>2021-04-19T11:54:36-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://w0wie.org/post/</loc>
-    <lastmod>2021-04-19T00:12:33-04:00</lastmod>
+    <lastmod>2021-04-19T11:54:36-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://w0wie.org/</loc>
-    <lastmod>2021-04-19T00:12:33-04:00</lastmod>
+    <lastmod>2021-04-19T11:54:36-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://w0wie.org/post/welcome_aboard/</loc>
+    <loc>https://w0wie.org/post/welcome-aboard/</loc>
     <lastmod>2021-04-19T00:12:33-04:00</lastmod>
   </url>
   
