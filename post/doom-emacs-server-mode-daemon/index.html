@@ -41,7 +41,7 @@
 <p>Maybe you, like me, have been browsing around with a shell opening files with emacs and find that it isn&rsquo;t very snappy.  Every time you open a text file, you&rsquo;re loading full blown emacs, which takes (<em>gasp</em>) over a second.</p>
 <p>Fortunately you can run a single instance of Emacs in the background &ndash; a daemon, if you will.  This will allow you to open new files using to existing, running emacs instance.  Much faster!</p>
 <p>Disclaimer: I use ubuntu, so this may or may not work for you if you&rsquo;re using another linux distribution.  Or a Mac.  Definitely not windows, but you can probably adapt it.</p>
-<p>I&rsquo;m also using doom emacs, if you&rsquo;re not, that should be okay.</p>
+<p>I&rsquo;m also using doom emacs. If you&rsquo;re not, that should be okay.</p>
 <h1 id="how-do-i-start-the-daemon">How do I start the daemon?</h1>
 <p>The solution I liked the most (there are others) was to always run emacsclient when opening files instead of emacs.</p>
 <p>When emacsclient runs, it will start the emacs server.  Thereafter, when you run emacsclient, it will connect to the existing server.</p>
@@ -51,7 +51,7 @@ export EDITOR<span style="color:#f92672">=</span><span style="color:#e6db74">&#3
 export VISUAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c -a emacs&#34;</span>   
 
 alias e<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c --socket-name=/tmp/emacs1000/server&#34;</span>
-</code></pre></div><p><strong>ALTERNATE_EDITOR</strong> tell emacsclient &ldquo;If the emacs server isn&rsquo;t running, use this editor instead.&rdquo;  We want to always start a new server, so this will be empty.</p>
+</code></pre></div><p><strong>ALTERNATE_EDITOR</strong> tells emacsclient &ldquo;If the emacs server isn&rsquo;t running, use this editor instead.&rdquo;  We want to always start a new server, so this will be empty.</p>
 <p><strong>EDITOR</strong> sets your default system editor to emacsclient.</p>
 <p><strong>VISUAL</strong> this is another variable the system may check for an editor command.  Most likely for a gui editor.</p>
 <p><strong>alias, etc.</strong> This maps e to emacs client, so I can simply type &ldquo;e filename.txt&rdquo; instead of &ldquo;emacs filename.txt&rdquo; to open a file in emacs.</p>
