@@ -46,17 +46,13 @@
 <p>The solution I liked the most (there are others) was to always run emacsclient when opening files instead of emacs.</p>
 <p>When emacsclient runs, it will start the emacs server.  Thereafter, when you run emacsclient, it will connect to the existing server.</p>
 <p>To do this, add the following to your ~/.profile or ~/.bashrc file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export ALTERNATE_EDITOR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
-export EDITOR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c&#34;</span>
-export VISUAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c -a emacs&#34;</span>   
-
-alias e<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c --socket-name=/tmp/emacs1000/server&#34;</span>
-</code></pre></div><p><strong>ALTERNATE_EDITOR</strong> tells emacsclient &ldquo;If the emacs server isn&rsquo;t running, use this editor instead.&rdquo;  We want to always start a new server, so this will be empty.</p>
-<p><strong>EDITOR</strong> sets your default system editor to emacsclient.</p>
-<p><strong>VISUAL</strong> this is another variable the system may check for an editor command.  Most likely for a gui editor.</p>
-<p><strong>alias, etc.</strong> This maps e to emacs client, so I can simply type &ldquo;e filename.txt&rdquo; instead of &ldquo;emacs filename.txt&rdquo; to open a file in emacs.</p>
-<p>I prefer emacs in visual mode.  If you don&rsquo;t, change the &ldquo;-c&rdquo; in the EDITOR and alias lines to &ldquo;-t&rdquo; to open in terminal mode.</p>
-<h1 id="how-do-i-stop-the-daemon">How do I stop the daemon?</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias e<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;emacsclient -c --socket-name=/tmp/emacs1000/server&#34;</span>
+</code></pre></div><p><strong>alias, etc.</strong> This maps e to emacs client, so I can simply type &ldquo;e filename.txt&rdquo; instead of &ldquo;emacs filename.txt&rdquo; to open a file in emacs.  You can make this &ldquo;emacs&rdquo; instead, if you&rsquo;re less lazy than me.</p>
+<p>I prefer emacs in visual mode.  If you don&rsquo;t, change the &ldquo;-c&rdquo; to &ldquo;-t&rdquo; to open in terminal mode.</p>
+<p><strong>Now reload your .profile or .bashrc somehow.</strong></p>
+<p>I just do one of these:</p>
+<pre><code class="language-bash." data-lang="bash.">. ~/.profile
+</code></pre><h1 id="how-do-i-stop-the-daemon">How do I stop the daemon?</h1>
 <ol>
 <li>Open an emacs client.</li>
 <li>Enter one of these commands:</li>
