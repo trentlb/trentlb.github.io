@@ -14,7 +14,7 @@
       
       <guid>https://w0wie.org/post/doom-emacs-server-mode-daemon/</guid>
       <description>What does it mean to run Emacs in server mode? Maybe you, like me, have been browsing around with a shell opening files with emacs and find that it isn&amp;rsquo;t very snappy. Every time you open a text file, you&amp;rsquo;re loading full blown emacs, which takes (gasp) over a second.
-Fortunately you can run a single instance of Emacs in the background &amp;ndash; a daemon, if you will. This will allow you to open new files using to existing, running emacs instance.</description>
+Fortunately you can run a single instance of Emacs in the background &amp;ndash; a daemon, if you will. This will allow you to open new files using the existing, running emacs instance.</description>
     </item>
     
     <item>
