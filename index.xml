@@ -6,9 +6,20 @@
     <description>Recent content on W00000000WIEEEEEEEE!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Apr 2021 11:54:36 -0400</lastBuildDate><atom:link href="https://w0wie.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 May 2021 11:35:00 -0400</lastBuildDate><atom:link href="https://w0wie.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How do I run Emacs in Server Mode / As a Daemon?</title>
+      <title>How do I edit files remotely in Doom Emacs with tramp mode?</title>
+      <link>https://w0wie.com/post/doom-emacs-tramp-mode/</link>
+      <pubDate>Wed, 12 May 2021 11:35:00 -0400</pubDate>
+      
+      <guid>https://w0wie.com/post/doom-emacs-tramp-mode/</guid>
+      <description>Prerequisites  Be running doom emacs. Have a remote server to connect to.  How do connect? The default keybinding for emacs is C-x C-f, which opens a &amp;ldquo;Find file&amp;rdquo; buffer.
+To reach the same buffer the doom emacs way, hit SPC f f.
+Type this, replacing &amp;ldquo;username&amp;rdquo; and &amp;ldquo;server&amp;rdquo; with your own stuff. Don&amp;rsquo;t worry if the buffer is already prefilled with text. If you start with /, emacs will ignore the text before it.</description>
+    </item>
+    
+    <item>
+      <title>How do I run Emacs in Server Mode / As a Daemon in Ubuntu 20.04?</title>
       <link>https://w0wie.com/post/doom-emacs-server-mode-daemon/</link>
       <pubDate>Mon, 19 Apr 2021 11:54:36 -0400</pubDate>
       

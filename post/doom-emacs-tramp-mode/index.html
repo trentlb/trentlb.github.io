@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.83.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="W00000000WIEEEEEEEE!">
+<title>How do I edit files remotely in Doom Emacs with tramp mode? - W00000000WIEEEEEEEE!</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://w0wie.com/">[W00000000WIEEEEEEEE!]</a>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-05-12">May 12, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">How do I edit files remotely in Doom Emacs with tramp mode?</h1>
+  <section class="body" itemprop="articleBody">
+    <h1 id="prerequisites">Prerequisites</h1>
+<ol>
+<li>Be running doom emacs.</li>
+<li>Have a remote server to connect to.</li>
+</ol>
+<h1 id="how-do-connect">How do connect?</h1>
+<p>The default keybinding for emacs is C-x C-f, which opens a &ldquo;Find file&rdquo; buffer.</p>
+<p>To reach the same buffer the doom emacs way, hit SPC f f.</p>
+<p>Type this, replacing &ldquo;username&rdquo; and &ldquo;server&rdquo; with your own stuff.  Don&rsquo;t worry if the buffer is already prefilled with text.  If you start with /, emacs will ignore the text before it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/ssh:username@server:
+</code></pre></div><p>This will drop you into Dired in the remote user&rsquo;s home directory.</p>
+<p>If you&rsquo;d rather go straight to a file, use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/ssh:username@server:/path/to/file
+</code></pre></div><h1 id="how-do-i-easily-reach-the-server-again">How do I easily reach the server again.</h1>
+<p>You can bookmark any file / directory that you can load.  Opening the bookmark will automatically connect to the server.</p>
+<p>In doom emacs:</p>
+<p>SPC ENTER</p>
+<p>Then enter your bookmark name and press ENTER again.</p>
+<p>Any time you want to select this bookmark, type SPC ENTER.</p>
+<p>w0wie!</p>
+<p>&ndash; Luke</p>
+
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2021 W00000000WIEEEEEEEE! - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
+
